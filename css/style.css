@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* colors */
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+    --white: #fff;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    overflow-x: hidden;
+}
+/* typography */
+h1, h3{
+    color: var(--Pink);
+}
+h2{
+    color: var(--Violet);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0px;
+    font-size: 28px;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+/* logo */
+header img{
+    width: 170px;
+    height: 30px;
+    margin-top: 3px;
+}
+/* button */
+header button{
+    border: 2px solid var(--Violet);
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: white;
+    font-family: "Open sans";
+    font-weight: 600;
+    color: var(--Violet);
+}
+/* button hover */
+header button:hover{
+    border-color: var(--LightPink);
+    cursor: pointer;
+    color: var(--LightPink);
+}
+/* section 1 */
+section button{
+    background-color: var(--Violet);
+    font-family: "Open sans";
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border-style: none;
+}
+section button:hover{
+    background-color: var(--LightPink); 
+    cursor: pointer;
+}
+.herosection{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.herosection p{
+    width: 50%;
+}
+.herosection .heroimg{
+    width: 65%;
+}
+/* section 2 */
+.sec-2{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sec-2 div h2{
+    font-size: 64px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    padding: 0px;
+    margin: -15px;
+}
+.sec-2 div img{
+    float: left;
+}
+.sec-2 div P
+/* backgrounds */
+section .bg_mobile1{
+    display: none;
+}
+/* section 3-5 img */
+.sec-3 img, .sec-4 img, .sec-5 img{
+    display: block;
+    width: 70%;
+    margin-left: 100px;
+}
+/* section 3  -  section 5*/
+.sec-3{
+    margin-top: 100px;
+}
+.sec-3, .sec-4, .sec-5{
+    padding: 50px;
+}
+.sec-3, .sec-5{
+    display: flex;
+    background-color: var(--Violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 65vw;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    color: var(--white);
+}
+.sec-3 div, .sec-4 div, .sec-5 div{
+    width: 50%;
+}
+.sec-3 div:first-child, .sec-4 div:first-child, .sec-5 div:first-child{
+    padding: 70px 100px;
+}
+.sec-3 div:nth-child(2), .sec-4 div:nth-child(2), .sec-5 div:nth-child(2){
+    padding:0px 70px 0px 0px;
+}
+/* section 4 */
+.sec-4{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    margin: 30px 0px;
+}
+/* section 6 */
+.sec-6{
+    text-align: center;
+    margin: 100px;
+    padding: 30px;
+}
+.sec-6 h1{
+    padding: 20px;
+}
+/* footer */
+footer{
+    background-color: var(--Violet);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    padding-top: 10px;
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 65vw;
+    background-repeat: no-repeat;
+}
+footer section{
+    padding: 100px;
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+footer h3{
+    color: var(--Pink);
+}
+footer p{
+    font-size: 13px;
+}
+/* footer logo */
+.foot-logo{
+    width: 200px;
+    margin-left: -10px;
+}   
+.txt1, .txt2{
+    width: 60%;
+}  
+
+/* contact section */
+.con-sec{
+    width: 100%;
+}
+.contact{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+/* form section --starts*/
+.foot-sec-2 .form{
+    padding-top: 10px;
+    display: flex;
+    flex-flow: nowrap;
+    gap: 20px;
+    width: 100%; 
+}
+.foot-sec-2 .form .input{
+    width: 60%;
+}
+/* error message */
+.error{
+    color: var(--LightRed);
+    text-align: left;
+}
+.foot-sec-2 .form input{
+    width: 100%;
+    height: 35px;
+}
+.foot-sec-2 .form  #submit{
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: var(--Pink);
+    font-family: "Open sans";
+    color: white;
+    font-weight: 600;
+    border-style: none;
+    /* box-shadow: ; */
+}
+.foot-sec-2 .form  #submit:hover{
+    background-color: var(--LightPink); 
+    cursor: pointer;
+}
+/* form section --ends*/
+/* icon secction */
+.sec-icon{
+    padding: 10px 100px;
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.fa{
+    color: white;
+}
+.fa:hover{
+    color: var(--LightPink);
+    cursor: pointer;
+}
+/* attribution */
+.attribution {
+    font-size: 14px; 
+    text-align: center;
+    color: white; 
+}
+.attribution a { 
+    color: var(--VeryDarkCyan)
+}

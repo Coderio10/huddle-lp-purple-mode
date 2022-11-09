@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./font/css/font-awesome.css">
+  <link rel="stylesheet" href="./font/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+    <button type="button">Try it free</button>
+  </header>
+  <section class="herosection">
+    <h1>Build The Community Your Fans Will Love</h1>
+    <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
+      your audience. Create connections with your users as you engage in genuine discussion. 
+    </p>
+    <button>Get Started For Free</button>
+    <img src="./images/screen-mockups.svg" class="heroimg" alt="screen-mockups">
+  </section>
+  <main>
+    <section class="sec-2">
+      <div>
+        <img src="./images/icon-communities.svg" alt="icon-communities">
+        <h2>1.4k+</h2>
+        <p>Communities Formed</p>
+      </div>
+      <div>
+        <img class="mes-img" src="./images/icon-messages.svg" alt="icon-messages">
+        <h2>2.7m+</h2>
+        <p>Messages Sent</p>
+      </div>
+    </section>
+    <section class="sec-3">
+      <div>
+        <h3>Grow Together</h3>
+        <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form. 
+        </p>
+      </div>
+      <div>
+        <img src="./images/illustration-grow-together.svg" alt="illustration-grow-together">
+      </div>
+    </section>
+    <section class="sec-4">
+      <div>
+        <h3>Flowing Conversations</h3>
+        <p> You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+          just-in-time loading for a more natural flow.
+        </p> 
+      </div> 
+      <div>
+        <img src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation">
+      </div> 
+    </section>
+    <section class="sec-5">
+      <div>
+        <h3>Your Users</h3>
+        <p> It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+          once signed in to your app, your users can start chatting immediately.     
+        </p> 
+      </div>
+      <div>
+        <img src="./images/illustration-your-users.svg" alt="illustration-your-users">
+      </div>
+    </section>
+    <section class="sec-6">
+      <h1>Ready To Build Your Community?</h1>
+      <button>Get Started For Free</button>
+    </section>
+  </main>
+  <footer>
+      <section>
+        <div class="foot-sec-1">
+          <img class="foot-logo" src="./images/footer-logo.svg" alt="logo">
+          <p class="txt1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+            vestibulum a, ultrices quis sem.</p>
+          <!-- contact section -->
+          <div class="con-sec">
+            <span class="contact">
+              <img src="./images/icon-phone.svg" alt="icon-phone">
+              <p>Phone: +1-543-123-4567</p>
+            </span>
+            <span class="contact">
+              <img src="./images/icon-email.svg" alt="icon-email">
+              <p>example@huddle.com</p>
+            </span>
+          </div>  
+        </div>
+        <div class="foot-sec-2">
+          <h3>Newsletter</h3>
+          <p class="txt2">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+            send you spam or pass on your email address</p>
+          <!-- form section -->
+          <form name="contactForm" class="form" onsubmit="return validateForm()"   method="post">
+            <div class="input">
+              <input type="email" name="email" id="email">
+              <div class="error" id="emailErr"></div>
+            </div>
+            <div>
+              <input type="submit" value="Subscribe" id="submit">
+            </div>
+          </form>  
+        </div>
+      </section>  
+      <div class="sec-icon">
+        <i class="fa fa-facebook-square fa-2x"></i>
+        <i class="fa fa-instagram fa-2x"></i>
+        <i class="fa fa-twitter-square fa-2x"></i>
+      </div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Code Rio</a>.
+      </p>
+  </footer>
+</body>
+<script>
+  // Defining a function to display error message
+  function printError(elemId, hintMsg) {
+      document.getElementById(elemId).innerHTML = hintMsg;
+  }
+  // validation function
+  function validateForm(){
+    var email = document.contactForm.email.value;
+    // Defining error variables with a default value
+    var emailErr = true;
+   // Validate email address
+   if(email == "") {
+        printError("emailErr", "Please enter your email address");
+    } else {
+        // Regular expression for basic email validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if(regex.test(email) === false) {
+            printError("emailErr", "Please enter a valid email address");
+        } else{
+            printError("emailErr", "");
+            emailErr = false;
+        }
+    }
+    // Prevent the form from being submitted if there are any errors
+    if((emailErr) == true){   
+      return false; 
+    }else{
+      alert(email +' '+ "is Saved!, Rate my project");
+    }
+
+  };
+</script>
+</html>
