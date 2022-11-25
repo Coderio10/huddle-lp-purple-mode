@@ -37,6 +37,17 @@
         font-family: "Open sans";
         font-size: 16px;
     }
+    /*  Header   */
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 5%;
+    }
+    header img{
+        width: 170px;
+        height: 30px;
+        margin-top: 3px;
+    }
     /* section button */
     section button{
         width: 70%;
