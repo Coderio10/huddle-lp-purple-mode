@@ -178,9 +178,8 @@ section .bg_mobile1{
 .sec-6{
     text-align: center;
     margin: 100px;
-    padding: 30px;
 }
-.sec-6 h1{
+.sec-6 h2{
     padding: 20px;
 }
 /* footer */
