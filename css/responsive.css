@@ -168,3 +168,17 @@
         
     }
 }
+@media (max-width: 375px){
+    /*    header  */
+    header img{
+        width: 55%;
+        height: 30px;
+        margin-top: 3px;
+    }
+    header button{
+        width: 40%;
+        font-size: 13px;
+         padding: 10px 20px;
+        font-weight: 500;
+    }
+}
